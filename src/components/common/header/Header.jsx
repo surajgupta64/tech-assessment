@@ -15,10 +15,13 @@ const Header = () => {
           <div className='nav'>
             <ul className={navList ? "small" : "flex"}>
               <li >
-                <Link to='/History' onClick={() => setNavList(false)}>History</Link>
+                <Link to='/program' onClick={() => setNavList(false)}>Program</Link>
               </li>
               <li >
-                <Link to='/Cart' onClick={() => setNavList(false)}>Cart</Link>
+                <Link to='/about' onClick={() => setNavList(false)}>About Us</Link>
+              </li>
+              <li >
+                <Link to='/contact' onClick={() => setNavList(false)}>Contact Us</Link>
               </li>
             </ul>
           </div>

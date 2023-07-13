@@ -1,19 +1,13 @@
-import React, { useState } from "react"
-import Hero from "./hero/Hero"
+import React from "react"
+import Form from "../common/Form"
 
 const Home = () => {
-  const [history, setHistory] = useState([]);
 
-  const addToHistory = (imageUrl) => {
-    setHistory([...history, imageUrl]);
-    localStorage.setItem('history', JSON.stringify([...JSON?.parse(localStorage.getItem('history')), imageUrl]));
-    console.log(localStorage.getItem('history'))
-  };
 
   return (
-    <>
-      <Hero addToHistory={addToHistory} />
-    </>
+    <div style={{ display: 'flex', textAlign: 'center', justifyContent: 'center' }}>
+      <Form />
+    </div>
   )
 }
 
